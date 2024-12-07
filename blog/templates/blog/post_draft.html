@@ -4,7 +4,7 @@
 {% for pos in posts %}
     <div class="post">
     {% if post.photo %}
-        <p><img src='{{ post.photo.url }}' widht='600'></p>
+        <p><img src='{{ post.photo.url }}' widht='100'></p>
     {% endif %}
     <p class="date">created: {{ post.created_date:'d-m-Y' }}</p>
     <h1><a href="{% url 'post_info' pk=post.pk %}">{{ post.title }}</a></h1>
